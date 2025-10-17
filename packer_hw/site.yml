@@ -1,0 +1,8 @@
+- name: Deploy Flask + NGINX + PostgreSQL (local)
+  hosts: web
+  become: yes
+  roles:
+    - common
+    - postgres
+    - app
+    - nginx
